@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="media\css\style.css" />
+    <link rel="icon" type="image" href="media\img\icon.png" />
+    <title>Сетевой город | Преподаватель edition</title>
+  </head>
+  <body onload="pageOnLoad()">
+    <header class="header-block-container">
+      <div class="block-container-top">
+        <!-- первая половина шапки-->
+
+        <div class="block-container-first">
+          <div class="first-container">
+            <div class="fio-year-logout">
+              <p class="date ps" id="clock"></p>
+              <p class="year ps">2022/2023 уч.год</p>
+              <p class="plogout">
+                <button
+                  name="btn2"
+                  \mainConfirmed.htmlvalue="inter"
+                  class="logout"
+                  onclick="blockBackBtn()"
+                >
+                  Выйти
+                </button>
+              </p>
+            </div>
+          </div>
+          <!--вторая половина шапки-->
+          <div class="second-container">
+            <img class="main-logo" src="media\img\main.png" />
+            <p class="sitename p-top">Сетевой город.Образование</p>
+            <p class="school-number p-top">МБОУ "СОШ №10"</p>
+            <p class="school-number p-top">г.Чебоксары</p>
+          </div>
+        </div>
+        <!--меню навигации-->
+        <div class="nav-block">
+          <div class="nav">
+            <div class="navigation-menu-block">
+              <ul class="navigation-menu">
+                <li class="punkt"><a href="" class="nav-link">Главная</a></li>
+                <li class="punkt">
+                  <a href="" class="nav-link">Расписание</a>
+                </li>
+                <li class="punkt"><a href="" class="nav-link">Отчеты</a></li>
+                <li class="punkt"><a href="" class="nav-link">Журнал</a></li>
+                <li class="punkt"><a href="" class="nav-link">Ресурсы</a></li>
+              </ul>
+            </div>
+
+            <div class="nav-buttons">
+              <p class="plogout">
+                <button
+                  class="plogout-btn"
+                  name="btn2"
+                  value="объявления"
+                  class="ads"
+                >
+                  <img class="plogout-img" src="media\img\ads.png" />
+                </button>
+              </p>
+              <p class="plogout">
+                <button
+                  class="plogout-btn"
+                  name="btn3"
+                  value="почта"
+                  class="mail"
+                >
+                  <img class="plogout-img" src="media\img\mail.png" />
+                </button>
+              </p>
+              <p class="plogout">
+                <button
+                  class="plogout-btn"
+                  name="btn4"
+                  value="справка"
+                  class="reference"
+                >
+                  <img class="plogout-img" src="media\img\reference.png" />
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--основная часть страницы-->
+    <section class="section-block-container">
+      <div class="main-block-container">
+        <div class="first-element box1">
+          <img src="media\img\second-section.png" alt="#" class="i-el1" />
+          <h1 class="h-el1">Журнал</h1>
+          <p class="p-el1">Оценки и домашнее задание</p>
+          <input
+            type="button"
+            name="dnev"
+            class="bt-el1 bbb"
+            value="Открыть дневник"
+          />
+        </div>
+
+        <div class="second-element box2">
+          <img src="media\img\sixth-section.png" alt="#" class="i-el2" />
+          <h1 class="h-el2">Расписание</h1>
+          <p class="p-el2">
+            Расписание уроков, классных и школьных мероприятий
+          </p>
+          <input
+            type="button"
+            name="rasp"
+            class="bt-el2 bbb"
+            value="Открыть расписание"
+          />
+        </div>
+
+        <div class="third-element box3">
+          <img src="media\img\fith-section.png" alt="#" class="i-el3" />
+          <h1 class="h-el3">Отчеты</h1>
+          <p class="p-el3">Просмотр и создание отчетов</p>
+          <input
+            type="button"
+            name="otch"
+            class="bt-el3 bbb"
+            value="Открыть отчет"
+          />
+        </div>
+
+        <div class="fourth-element box4">
+          <img src="media\img\parents.png" alt="#" class="i-el4" />
+          <h1 class="h-el4">Информационное письмо для родителей</h1>
+          <p class="p-el4">Сводка оценок и пропусков</p>
+          <input
+            type="button"
+            name="pism"
+            class="bt-el4 bbb"
+            value="Открыть письмо"
+          />
+        </div>
+
+        <div class="fifth-element box5">
+          <img src="media\img\fourth-section.png" alt="#" class="i-el5" />
+          <h1 class="h-el5">Динамика среднего балла</h1>
+          <p class="p-el5">Итоги успеваемости</p>
+          <input
+            type="button"
+            name="srbl"
+            class="bt-el5 bbb"
+            value="Просмотреть"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!--подвал страницы-->
+
+    <footer class="footer-block-container">
+      <div class="last-logo-container">
+        <img src="media\img\main.png" alt="#" class="last-logo" />
+      </div>
+
+      <div class="last-information-container">
+        <p class="last-information-container" style="font-size: 14px">
+          Сетевой город. Образование
+          <br />
+          2023, МЦК ЧЭМК, г.Чебоксары
+        </p>
+      </div>
+    </footer>
+
+    <script src="media\js\script.js"></script>
+  </body>
+</html>

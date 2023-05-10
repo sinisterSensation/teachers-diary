@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="media\css\style.css" />
+    <link rel="icon" type="image" href="media\img\icon.png" />
+    <title>Сетевой город | Вход</title>
+  </head>
+
+  <body onload="go()">
+    <header class="form-header">
+      <div class="left-side">
+        <img
+          class="main-logo"
+          src="media\img\main.png"
+          onclick="backToMainFirst()"
+        />
+        <p class="sitename p-top">Сетевой город.Образование</p>
+      </div>
+      <div class="right-side">
+        <p class="date ps" id="clock"></p>
+      </div>
+    </header>
+
+    <hr />
+
+    <section class="form-block-container">
+      <form class="log-in" id="log-in-parent">
+        <label id="region-l">Регион</label>
+        <input
+          type="text"
+          placeholder="Чувашская республика"
+          class="region"
+          disabled
+        />
+
+        <label id="city-l">Населённый пункт</label>
+        <select placeholder="Чебоксары" class="city">
+          <option>Чебоксары</option>
+          <option disabled>Батыревский район</option>
+          <option>Канашский район</option>
+        </select>
+
+        <label id="school-l">Образовательная организация</label>
+        <select class="school">
+          <option>СОШ №10</option>
+          <option disabled>МЦК ЧЭМК</option>
+        </select>
+
+        <input type="text" placeholder="Логин" class="login" id="mail" />
+        <input
+          type="password"
+          placeholder="Пароль"
+          class="password"
+          id="password1"
+        />
+
+        <button
+          type="button"
+          id="reg-btn"
+          class="sign-in-btn"
+          onclick="login()"
+        >
+          Войти
+        </button>
+      </form>
+    </section>
+
+    <footer class="footer-block-container">
+      <div class="last-logo-container">
+        <img src="media\img\main.png" alt="#" class="last-logo" />
+      </div>
+
+      <div class="last-information-container">
+        <p class="last-information-container" style="font-size: 14px">
+          Сетевой город. Образование
+          <br />
+          2023, МЦК ЧЭМК, г.Чебоксары
+        </p>
+      </div>
+    </footer>
+
+    <script src="media\js\script.js"></script>
+  </body>
+</html>
