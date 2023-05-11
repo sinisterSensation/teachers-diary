@@ -16,6 +16,7 @@
         <div class="block-container-first">
           <div class="first-container">
             <div class="fio-year-logout">
+              <p id="userHeader" style="display: flex; align-items: center; font-size: 18px;"></p>
               <p class="date ps" id="clock"></p>
               <p class="year ps">2022/2023 уч.год</p>
               <p class="plogout">
@@ -43,10 +44,8 @@
           <div class="nav">
             <div class="navigation-menu-block">
               <ul class="navigation-menu">
-                <li class="punkt"><a href="" class="nav-link">Главная</a></li>
-                <li class="punkt">
-                  <a href="" class="nav-link">Расписание</a>
-                </li>
+                <li class="punkt"><a href="mainConfirmed.html" class="nav-link">Главная</a></li>
+                <li class="punkt"><a href="schedule.html" class="nav-link">Расписание</a></li>
                 <li class="punkt"><a href="" class="nav-link">Отчеты</a></li>
                 <li class="punkt"><a href="" class="nav-link">Журнал</a></li>
                 <li class="punkt"><a href="" class="nav-link">Ресурсы</a></li>
@@ -104,7 +103,7 @@
           />
         </div>
 
-        <div class="second-element box2">
+        <div class="second-element box2" onclick="goToSchedule()">
           <img src="media\img\sixth-section.png" alt="#" class="i-el2" />
           <h1 class="h-el2">Расписание</h1>
           <p class="p-el2">
