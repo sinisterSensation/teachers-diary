@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="media\css\style.css" />
+    <link rel="icon" type="image" href="media\img\icon.png" />
+    <title>Сетевой город | Преподаватель edition</title>
+  </head>
+  <body onload="pageOnLoad()">
+    <header class="header-block-container">
+      <div class="block-container-top">
+        <!-- первая половина шапки-->
+
+        <div class="block-container-first">
+          <div class="first-container">
+            <div class="fio-year-logout">
+              <p id="userHeader" style="display: flex; align-items: center; font-size: 18px;"></p>
+              <p class="date ps" id="clock"></p>
+              <p class="year ps">2022/2023 уч.год</p>
+              <p class="plogout">
+                <button 
+                class="logout"
+                onclick="blockBackBtn()"
+                name="btn2"
+                value="inter"
+                >
+                  Выйти
+                </button>
+              </p>
+            </div>
+          </div>
+          <!--вторая половина шапки-->
+          <div class="second-container">
+            <img class="main-logo" src="media\img\main.png" />
+            <p class="sitename p-top">Сетевой город.Образование</p>
+            <p class="school-number p-top">МБОУ "СОШ №10"</p>
+            <p class="school-number p-top">г.Чебоксары</p>
+          </div>
+        </div>
+        <!--меню навигации-->
+        <div class="nav-block">
+          <div class="nav">
+            <div class="navigation-menu-block">
+              <ul class="navigation-menu">
+                <li class="punkt"><a href="mainConfirmed.html" class="nav-link">Главная</a></li>
+                <li class="punkt"><a href="schedule.html" class="nav-link">Расписание</a></li>
+                <li class="punkt"><a href="" class="nav-link">Отчеты</a></li>
+                <li class="punkt"><a href="" class="nav-link">Журнал</a></li>
+                <li class="punkt"><a href="" class="nav-link">Ресурсы</a></li>
+              </ul>
+            </div>
+
+            <div class="nav-buttons">
+              <p class="plogout">
+                <button
+                  class="plogout-btn"
+                  name="btn2"
+                  value="объявления"
+                  class="ads"
+                  title="ads"
+                >
+                  <img class="plogout-img" src="media\img\ads.png" />
+                </button>
+              </p>
+              <p class="plogout">
+                <button
+                  class="plogout-btn"
+                  name="btn3"
+                  value="почта"
+                  class="mail"
+                  title="email"
+                >
+                  <img class="plogout-img" src="media\img\mail.png" />
+                </button>
+              </p>
+              <p class="plogout">
+                <button
+                  class="plogout-btn"
+                  name="btn4"
+                  value="справка"
+                  class="reference"
+                  title="reference"
+                >
+                  <img class="plogout-img" src="media\img\reference.png" />
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script src="media\js\script.js"></script>
+    <script src="media\js\report.js"></script>
+  </body>
+</html>
