@@ -28,6 +28,8 @@ const students = [
     {numbers: '23', name:'Яковлев Сергей', marks:[]},
 ];
 
+
+
 const marksNameCell = document.createElement('td');
 const fio = document.createElement('td');
 const numRowCell = document.createElement('td');
@@ -50,6 +52,7 @@ marksNameCell.colSpan = 50;
 
 
 students.forEach(student => {
+
     const row = document.createElement('tr');
     const cell = document.createElement('td');
 
@@ -149,6 +152,7 @@ document.body.appendChild(table);
 //     students.marks.push('НБ');
 //     chooseMarkBlock.style = 'display: none';
 //     }
+
 
 
 

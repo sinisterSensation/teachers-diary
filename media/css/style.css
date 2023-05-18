@@ -524,3 +524,30 @@ td {
   
 }
 
+/* average page */
+
+table {
+  border-collapse: collapse;
+  margin: 40px auto 40px auto;
+  font-size: 14px;
+}
+
+.nameNumber, .nameFIO, .nameAVG {
+  height: 40px; 
+  text-align: center;
+  width: 40px;
+}
+
+.studNumber {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+}
+
+.studName {
+  width: 170px; 
+  height: 40px;
+  padding-left: 10px;
+}
+
+
